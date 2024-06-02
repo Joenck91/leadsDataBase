@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #E8E8E8;
+    max-width: 99%;
+}
+.barrinhas{
+    background-color: #E8E8E8;
+}
+.barrinha-menu {
+    height: 4px;
+    width: 30px;
+    background-color: #222831;
+    display: block;
+    margin: 5px;
+  }
+  nav{
+    background-color: #E8E8E8;
+    margin:10px;
+    display: inline-flex;
+    flex-direction: column;
+    position: fixed;
+  }
+  #link-tarefas{
+    display: none;
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+  }
+  #link-tarefas li {
+    display: flex;
+    padding: 4px;
+    background-color: #E8E8E8;
+    border-radius: 10px;
+  }
+  #link-tarefas li a{
+    text-decoration: none;
+    color:aliceblue;
+    text-align: center;
+    align-items: center;
+    background-color: #222831;
+    padding: 4px;
+    border-radius: 3px;
+  }
+  #menuButton{
+    background-color: #E8E8E8;
+  }
+  #menuButton:hover + #link-tarefas,
+  #link-tarefas:hover {
+  display: block;
+}
+.box-tabelas {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button-etapa{
+ padding: 7px;
+ border-radius: 7px;
+ box-shadow: 3px 3px 3px black;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size:medium;
+ cursor: pointer;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 5px;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 4px; /* Reduzindo o padding para diminuir o espaçamento */
+  font-size: 14px; /* Ajustando o tamanho da fonte */
+}
+
+th {
+  background-color: #f2f2f2;
+  
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+th[colspan] {
+  text-align: center;
+  background-color: #e8e8e8;
+  font-size: 1em;
+  padding: 5px;
+}
+
+/* Ajustando a largura mínima das colunas */
+th, td {
+  min-width: 98%;
+}
